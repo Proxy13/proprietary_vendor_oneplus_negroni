@@ -6,12 +6,68 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/negroni
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/negroni/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
+    vendor/oneplus/negroni/proprietary/odm/bin/hw/vendor.pixelworks.hardware.display.iris-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.display.iris-service \
+    vendor/oneplus/negroni/proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor/oneplus/negroni/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/negroni/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/negroni/proprietary/odm/etc/camera/config/camera_unit_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_unit_config \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/config/imx615:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx615 \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/config/imx789:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx789 \
     vendor/oneplus/negroni/proprietary/odm/etc/camera/config/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_aps_config \
     vendor/oneplus/negroni/proprietary/odm/etc/camera/config/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/config/ov08a10:$(TARGET_COPY_OUT_ODM)/etc/camera/config/ov08a10 \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/config/s5kjn1sq03:$(TARGET_COPY_OUT_ODM)/etc/camera/config/s5kjn1sq03 \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/Delta400.3dl.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Delta400.3dl.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/Emerald.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Emerald.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/Radiance.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Radiance.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/Serenity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Serenity.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-24hour-city.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-24hour-city.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-3dcity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-3dcity.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-after-glow.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-after-glow.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-azure-water.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-azure-water.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-beach.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-beach.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-blue-water.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-blue-water.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-coco-grove.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-coco-grove.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-crisp-fall.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-crisp-fall.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-desert.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-desert.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-earth.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-earth.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-glazed-tile.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-glazed-tile.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-japan.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-japan.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-lake.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-lake.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-mountainous.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-mountainous.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-old-times.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-old-times.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-quietly-ele.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-quietly-ele.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-rosy.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-rosy.cube.rgb.bin \
+    vendor/oneplus/negroni/proprietary/odm/etc/camera/filters_lut/gt-steaming.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/gt-steaming.cube.rgb.bin \
     vendor/oneplus/negroni/proprietary/odm/etc/camera/settings_fdc.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
+    vendor/oneplus/negroni/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm.lst:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm.lst \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm1.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm1.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm10.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm10.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm11.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm11.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm12.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm12.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm13.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm13.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm13_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm13_low.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm14.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm14_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm14_low.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm15.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm15.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm15_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm15_low.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm16.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm16.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm17.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm17.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm18.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm18.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm2.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm2.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm3.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm3.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm4.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm4.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm5.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm5.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm6.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm6.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm7.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm7.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm8.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm8.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/inParm9.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm9.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/mcfCheck.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/mcfCheck.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/inparm/irissoft/mcfCheck_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/mcfCheck_low.txt \
+    vendor/oneplus/negroni/proprietary/odm/etc/irissoft.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft.fw \
     vendor/oneplus/negroni/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat \
     vendor/oneplus/negroni/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Configuration.txt \
     vendor/oneplus/negroni/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID10_MIC_VR.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Parameter_ID10_MIC_VR.txt \
@@ -58,4 +114,68 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/negroni/proprietary/odm/etc/sensor/config/waipio_qrd_sx933x_down_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_sx933x_down_0.json \
     vendor/oneplus/negroni/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/oneplus/negroni/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
-    vendor/oneplus/negroni/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt
+    vendor/oneplus/negroni/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
+    vendor/oneplus/negroni/proprietary/odm/lib/rfsa/adsp/QNN_lib/libQnnHtpAltPrepV69Skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/QNN_lib/libQnnHtpAltPrepV69Skel.so \
+    vendor/oneplus/negroni/proprietary/odm/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepV69Skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepV69Skel.so \
+    vendor/oneplus/negroni/proprietary/odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/QNN_lib/libQnnHtpAltPrepV69Stub.so:$(TARGET_COPY_OUT_ODM)/lib64/QNN_lib/libQnnHtpAltPrepV69Stub.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.hal.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.sensor.imx615.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx615.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.sensor.imx789.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx789.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.sensor.ov08a10.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.ov08a10.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.sensor.s5kjn1sq03.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.s5kjn1sq03.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.sensormodule.waipio.qtech_imx615.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.waipio.qtech_imx615.bin \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.sensormodule.waipio.qtech_ov08a10.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.waipio.qtech_ov08a10.bin \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.sensormodule.waipio.qtech_s5kjn1sq03.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.waipio.qtech_s5kjn1sq03.bin \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.sensormodule.waipio.semco_imx789_MP.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.waipio.semco_imx789_MP.bin \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.tuned.qtech_imx615.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.qtech_imx615.bin \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.tuned.qtech_ov08a10.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.qtech_ov08a10.bin \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.tuned.qtech_s5kjn1sq03.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.qtech_s5kjn1sq03.bin \
+    vendor/oneplus/negroni/proprietary/odm/lib64/camera/com.qti.tuned.semco_imx789.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.semco_imx789.bin \
+    vendor/oneplus/negroni/proprietary/odm/lib64/hw/fingerprint.goodix_G7.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G7.default.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libSnpeCpu.so:$(TARGET_COPY_OUT_ODM)/lib64/libSnpeCpu.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libSnpeGpu.so:$(TARGET_COPY_OUT_ODM)/lib64/libSnpeGpu.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libarcsoft_hdr_couple_api_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_hdr_couple_api_v4.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libarcsoft_hdr_denoise_api_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_hdr_denoise_api_v4.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libarcsoft_low_light_hdr_for_neon.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_low_light_hdr_for_neon.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libgf_hal_G7.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_G7.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libml_util.so:$(TARGET_COPY_OUT_ODM)/lib64/libml_util.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisIoctlWrapper.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwiriscalibrate.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libpwirisservice.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisservice.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libpwirissoft.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirissoft.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwsoftirisPCS.so \
+    vendor/oneplus/negroni/proprietary/odm/lib64/libsnpeml.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpeml.so \
+    vendor/oneplus/negroni/proprietary/odm/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b00 \
+    vendor/oneplus/negroni/proprietary/odm/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b01 \
+    vendor/oneplus/negroni/proprietary/odm/vendor/firmware/goodixfp.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b02 \
+    vendor/oneplus/negroni/proprietary/odm/vendor/firmware/goodixfp.b03:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b03 \
+    vendor/oneplus/negroni/proprietary/odm/vendor/firmware/goodixfp.b04:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b04 \
+    vendor/oneplus/negroni/proprietary/odm/vendor/firmware/goodixfp.b05:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b05 \
+    vendor/oneplus/negroni/proprietary/odm/vendor/firmware/goodixfp.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b06 \
+    vendor/oneplus/negroni/proprietary/odm/vendor/firmware/goodixfp.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b07 \
+    vendor/oneplus/negroni/proprietary/odm/vendor/firmware/goodixfp.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.mdt \
+    vendor/oneplus/negroni/proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks-shim-service-qti \
+    vendor/oneplus/negroni/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-qti.rc \
+    vendor/oneplus/negroni/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
+    vendor/oneplus/negroni/proprietary/vendor/lib/rfsa/adsp/libQnnHtpAltPrepV69Skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQnnHtpAltPrepV69Skel.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsSDP.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/libQnnHtpAltPrepV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpAltPrepV69Stub.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/libUnnhalAccCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libUnnhalAccCommon.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/libUnnhalAccGpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libUnnhalAccGpu.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/libUnnhalAccHtp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libUnnhalAccHtp.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.1.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.2.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.0.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.1.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@3.0.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims-V3-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims-V3-ndk_platform.so \
+    vendor/oneplus/negroni/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio-V2-ndk_platform.so
+
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks-shim-service-qti \
+    vendor.pixelworks.hardware.display.iris-service \
+    vendor.pixelworks.hardware.feature.irisfeature-service
